@@ -8,7 +8,7 @@ If you don't need to change anything (config-wise), add this step into your Acti
 
 ```yaml
 - name: Antlers
-  uses: duncanmcclean/antlers-action@0.0.8
+  uses: steadfast-collective/antlers-action@1.0.0
 ```
 
 > Note: this action **won't automatically commit changes** to your repository. You'll need to use another action, like [`git-auto-commit-action`](https://github.com/stefanzweifel/git-auto-commit-action) to handle this.
@@ -17,7 +17,7 @@ The `antlers-formatter` package which this action uses under the hood, allows fo
 
 ```yaml
 - name: Antlers
-  uses: duncanmcclean/antlers-action@0.0.8
+  uses: steadfast-collective/antlers-action@1.0.0
   with:
     file: resources/views/layout.antlers.html
     directory: resources/views # this action defaults to resources/views
@@ -48,7 +48,7 @@ jobs:
           fetch-depth: 2
 
       - name: Antlers
-        uses: duncanmcclean/antlers-action@0.0.8
+        uses: steadfast-collective/antlers-action@1.0.0
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
