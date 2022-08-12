@@ -61,4 +61,4 @@ jobs:
 
 Under the hood, this action uses the `antlers-format` package, part of the [Antlers Toolbox](https://antlers.dev) by John Koster.
 
-The structure of thie action was copied from the [`laravel-pint-action`](https://github.com/aglipanci/laravel-pint-action).
+The structure of this action was copied from the [`laravel-pint-action`](https://github.com/aglipanci/laravel-pint-action).
