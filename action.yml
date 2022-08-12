@@ -1,4 +1,4 @@
-name: 'Antlers'
+name: 'Antlers Formatter'
 description: 'The Antlers action automatically formats Antlers files using the Antlers Toolbox.'
 author: 'Steadfast Collective <dev@steadfastcollective.com>'
 inputs:
