@@ -1,0 +1,35 @@
+name: 'Antlers'
+description: 'The Antlers action automatically formats Antlers files using the Antlers Toolbox.'
+author: 'Steadfast Collective <dev@steadfastcollective.com>'
+inputs:
+  file:
+    description: "The path to the template to format."
+    required: false
+
+  directory:
+    description: "A directory path to format all Antlers files, recursively."
+    required: false
+
+  output:
+    description: "An optional file path where the formatted results will be saved. When specified, the file (or files in a directory) is not overwritten."
+    required: false
+
+  dump:
+    description: "When specified, no results are saved to disk. Formatted results are displayed within the terminal."
+    required: false
+    
+  options:
+    description: "An optional file path to a JSON file containing Antlers formatting settings."
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.file }}
+    - ${{ inputs.directory }}
+    - ${{ inputs.output }}
+    - ${{ inputs.dump }}
+    - ${{ inputs.options }}
+branding:
+  icon: 'eye'
+  color: 'gray-dark'
